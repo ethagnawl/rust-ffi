@@ -1,8 +1,8 @@
 [package]
 name = "c_ffi_demo_matcher"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Peter Doherty <pdoherty@protonmail.com>"]
 edition = "2018"
 
 [dependencies]
-libc = "0.2.0"
+libc = "^0.2"

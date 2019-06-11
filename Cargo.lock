@@ -2,7 +2,7 @@
 # It is not intended for manual editing.
 [[package]]
 name = "c_ffi_demo_matcher"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "libc 0.2.58 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
