@@ -1,14 +1,14 @@
 .PHONY: all
 all:
 	$(MAKE) clean
-	$(MAKE) libhello.a
+	$(MAKE) libgreet.a
 
 .PHONY: clean
 clean:
 		rm -f *.o *.a
 
-hello.o: hello.c
+.o: greet.c
 		gcc -Wall -c *.c
 
-libhello.a: hello.o
-		ar -cvq libhello.a *.o
+libgreet.a: greet.o
+		ar -cvq libgreet.a *.o

@@ -15,4 +15,7 @@ how the language is capable of working with its host environment and existing
 tools and utilities. (If interested, see my [ECL](https://github.com/ethagnawl/ecl-hello-r-lisp) and [Crystal](https://github.com/ethagnawl/crystal-c-interop-demo) demos.)
 
 ## Run
-`LIBRARY_PATH=./src/lib cargo run`
+`pushd src/lib && make && popd && LIBRARY_PATH=./src/lib cargo run`
+
+## TODO
+- build shared library using a [Rust build script](https://doc.rust-lang.org/cargo/reference/build-scripts.html)
