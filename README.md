@@ -16,8 +16,9 @@ language in order to 1) have an excuse to write a program and 2) learn about
 how the language is capable of working with its host environment and existing
 tools and utilities. (If interested, see my [ECL](https://github.com/ethagnawl/ecl-hello-r-lisp) and [Crystal](https://github.com/ethagnawl/crystal-c-interop-demo) demos.)
 
-## Run (requires gcc, ar and a version of libyaml exposing the
-`yaml_get_version_string` function)
+## Run
+#### (requires gcc, ar and a version of libyaml exposing the `yaml_get_version_string` function)
+
 `pushd src/lib && make && popd && LIBRARY_PATH=./src/lib cargo run`
 
 ## TODO
