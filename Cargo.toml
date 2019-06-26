@@ -1,6 +1,6 @@
 [package]
-name = "c_ffi_demo_matcher"
-version = "1.0.0"
+name = "c_ffi_demo"
+version = "2.0.0"
 authors = ["Peter Doherty <pdoherty@protonmail.com>"]
 edition = "2018"
 
