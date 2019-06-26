@@ -28,13 +28,14 @@ fn main() {
     let yaml_version = yaml_version
         .to_str()
         .expect("Unable to detect YAML version");
-
-    let borrowed_string: &str = "You're running YAML version:";
-
-    let together =
-        CString::new(format!("{} {}", borrowed_string, yaml_version)).unwrap();
+    let yaml_version_message_prefix: &str = "You're running YAML version:";
+    let yaml_version_message = CString::new(format!(
+        "{} {}",
+        yaml_version_message_prefix, yaml_version
+    ))
+    .unwrap();
 
     unsafe {
-        display_greeting(together.as_ptr());
+        display_greeting(yaml_version_message.as_ptr());
     }
 }
