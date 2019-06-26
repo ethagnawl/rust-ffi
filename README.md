@@ -1,7 +1,7 @@
 ## About
 This project demonstrates how you might write a Rust program which uses FFI to
 call into shared C libraries (dynamic and static). One library (libyaml) is a
-system-level shared library (in /usr/lib on Debian 9.9) and the other is a
+system-level shared library (in /usr/include on Debian 9.9) and the other is a
 static library (libgreet) included in this repository.
 
 As usual, [the Rust FFI docs](https://doc.rust-lang.org/nomicon/ffi.html) are excellent and I was able to put this demo
