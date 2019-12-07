@@ -3,6 +3,7 @@ name = "c_ffi_demo"
 version = "2.0.0"
 authors = ["Peter Doherty <pdoherty@protonmail.com>"]
 edition = "2018"
+build = "build.rs"
 
 [dependencies]
 libc = "^0.2"

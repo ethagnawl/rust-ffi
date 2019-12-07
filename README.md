@@ -18,9 +18,13 @@ tools and utilities. (If interested, see my [Embeddable Common Lisp](https://git
 [Crystal](https://github.com/ethagnawl/crystal-c-interop-demo) demos.)
 
 ## Run
+### Build script
+```
+cargo run
+```
+
+### Make
 #### (requires gcc, ar and a version of libyaml exposing the `yaml_get_version_string` function)
-
-`pushd src/lib && make && popd && LIBRARY_PATH=./src/lib cargo run`
-
-## TODO
-- build shared library using a [Rust build script](https://doc.rust-lang.org/cargo/reference/build-scripts.html)
+```
+pushd src/lib && make && popd && LIBRARY_PATH=./src/lib cargo run
+```
