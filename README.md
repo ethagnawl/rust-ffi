@@ -18,13 +18,17 @@ tools and utilities. (If interested, see my [Embeddable Common Lisp](https://git
 [Crystal](https://github.com/ethagnawl/crystal-c-interop-demo) demos.)
 
 ## Run
+Requires:
+- gcc
+- ar
+- libyaml which exposes the `yaml_get_version_string` function
+
 ### Build script
 ```
 cargo run
 ```
 
 ### Make
-#### (requires gcc, ar and a version of libyaml exposing the `yaml_get_version_string` function)
 ```
 pushd src/lib && make && popd && LIBRARY_PATH=./src/lib cargo run
 ```
